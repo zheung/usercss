@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        DanoR 字体渲染
 @namespace   https://github.com/zheung
-@version     2.0.2
+@version     2.0.4
 @author      DanoR
 @description DanoR FontRender
 @updateURL   https://pile.danor.app/stylus/danor.user.css
@@ -12,12 +12,14 @@
 		text-shadow: 0em 0em 0.06em !important;
 	}
 }
-@-moz-document domain("hupu.com"), domain("baidu.com") {
+@-moz-document domain("hupu.com") {
 	/* 全局阴影+雅黑（域名白名单） */
 	* {
 		font-family: Microsoft YaHei !important;
 	}
 }
+
+/* 只能部分阴影的网站 */
 @-moz-document domain("iqiyi.com") {
 	/* 阴影+爱奇艺弹幕 */
 	:not(.danmaku-item) {
@@ -39,15 +41,35 @@
 		text-shadow: rgb(0, 0, 0) 0px 0px 1px, rgb(0, 0, 0) 0px 0px 1px, rgb(0, 0, 0) 0px 0px 1px !important;
 	}
 }
+
+/* 需要额外字体的网站 */
 @-moz-document domain("oschina.net") {
-	/* 阴影+开源中国图标 */
+	/* 开源中国图标 */
 	* {
-		font-family: Icons, Microsoft YaHei !important;
+		font-family: Microsoft YaHei !important;
+	}
+
+	i.icon {
+		font-family: Icons !important;
 	}
 }
 @-moz-document domain("clngdbkpkpeebahjckkjfobafhncgmne") {
 	/* Stylus自身 */
 	* {
 		font-family: Source Code Pro !important;
+	}
+}
+@-moz-document domain("baidu.com") {
+	/* 百度图标 */
+	* {
+		font-family: Microsoft YaHei !important;
+	}
+
+	.cmn-icons {
+		font-family: baikeFont_css !important;
+	}
+
+	.wiki-lemma-icons {
+		font-family: baikeFont_layout !important;
 	}
 }
