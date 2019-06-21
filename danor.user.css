@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        DanoR 字体渲染
 @namespace   https://github.com/zheung
-@version     2.0.4
+@version     2.0.5
 @author      DanoR
 @description DanoR FontRender
 @updateURL   https://pile.danor.app/stylus/danor.user.css
@@ -53,7 +53,7 @@
 		font-family: Icons !important;
 	}
 }
-@-moz-document domain("clngdbkpkpeebahjckkjfobafhncgmne") {
+@-moz-document regexp("chrome-extension://.*"), regexp("moz-extension://.*") {
 	/* Stylus自身 */
 	* {
 		font-family: Source Code Pro !important;
