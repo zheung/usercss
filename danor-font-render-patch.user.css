@@ -1,10 +1,10 @@
 /* ==UserStyle==
-@name        DanoR 字体渲染
+@name        【通用】DanoR字体渲染补丁
 @namespace   https://github.com/zheung
-@version     2.3.0
+@version     2.3.1
 @author      DanoR
-@description DanoR FontRender
-@updateURL   https://pile.danor.app/stylus/danor.user.css
+@description 利用text-shadow的字体渲染优化
+@updateURL   https://pile.danor.app/usercss/danor-font-render-patch.user.css
 ==/UserStyle== */
 
 @-moz-document regexp("((?!((paypal|debuggex|iqiyi|bilibili|(codecombat\\.163))\\.com)|paiza\\.jp|acfun\\.cn).)*") {

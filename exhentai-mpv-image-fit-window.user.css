@@ -1,15 +1,25 @@
 /* ==UserStyle==
-@name        [ExHentai] MPV 100vh
+@name        【ExHentai】MPV 100vh
 @namespace   https://github.com/zheung
-@version     1.2.0
+@version     1.3.0
 @author      DanoR
-@description ExHentai
-@updateURL   https://pile.danor.app/stylus/exhentai.user.css
+@description 使E站MPV浏览器中图片的高度匹配屏幕
+@updateURL   https://pile.danor.app/usercss/exhentai-mpv-image-fit-window.user.css
 ==/UserStyle== */
 
-@-moz-document domain("exhentai.org") {
+@-moz-document url-prefix("https://exhentai.org/mpv/") {
 	img[id^=imgsrc] {
-		width: auto!important;
+		width: auto !important;
+		max-height: calc(100vh - 30px);
+	}
+	div[id^=image_] {
+		max-height: calc(100vh - 0px);
+	}
+}
+
+@-moz-document url-prefix("https://e-hentai.org/mpv/") {
+	img[id^=imgsrc] {
+		width: auto !important;
 		max-height: calc(100vh - 30px);
 	}
 	div[id^=image_] {

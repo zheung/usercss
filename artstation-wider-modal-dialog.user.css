@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name        ArtStation Add project to collection Wider
+@name        【ArtStation】更宽的弹窗
 @namespace   https://github.com/zheung
-@version     1.0.0
-@author      Nuogz
-@description Window "Make Add project to collection" Wider
-@updateURL   https://pile.danor.app/stylus/artstation.user.css
+@version     1.1.0
+@author      DanoR
+@description 默认的弹窗太窄，因此加宽
+@updateURL   https://pile.danor.app/usercss/artstation-wider-modal-dialog.user.css
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://www.artstation.com/artwork") {
-	add-to-collection-modal div.modal-dialog {
-		width: 720px;
+	.modal-dialog {
+		width: 960px;
 	}
 }
