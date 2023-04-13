@@ -1,0 +1,18 @@
+/* ==UserStyle==
+@name        [ExHentai] MPV 100vh
+@namespace   https://github.com/zheung
+@version     1.2.0
+@author      DanoR
+@description ExHentai
+@updateURL   https://pile.danor.app/stylus/exhentai.user.css
+==/UserStyle== */
+
+@-moz-document domain("exhentai.org") {
+	img[id^=imgsrc] {
+		width: auto!important;
+		max-height: calc(100vh - 30px);
+	}
+	div[id^=image_] {
+		max-height: calc(100vh - 0px);
+	}
+}

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        微博推特昵称隐藏
 @namespace   https://github.com/zheung
-@version     1.0.0
+@version     1.1.0
 @author      DanoR
 @description Weibo/Twitter Nick Hider
 @updateURL   https://pile.danor.app/stylus/nickhider.user.css
@@ -12,7 +12,7 @@
 	}
 }
 @-moz-document domain("weibo.com") {
-	a.gn_name>em.S_txt1 {
+	a.gn_name>em.S_txt1, a.name.S_txt1 {
 		color: transparent;
 	}
 }

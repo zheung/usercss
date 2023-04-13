@@ -1,12 +1,12 @@
 /* ==UserStyle==
 @name        DanoR 字体渲染
 @namespace   https://github.com/zheung
-@version     2.0.5
+@version     2.1.0
 @author      DanoR
 @description DanoR FontRender
 @updateURL   https://pile.danor.app/stylus/danor.user.css
 ==/UserStyle== */
-@-moz-document regexp("((?!((iqiyi|bilibili|(codecombat\.163))\.com)|paiza\.jp).)*") {
+@-moz-document regexp("((?!((paypal|debuggex|iqiyi|bilibili|(codecombat\\.163))\\.com)|paiza\\.jp|acfun\\.cn).)*") {
 	/* 全局阴影（正则黑名单） */
 	* {
 		text-shadow: 0em 0em 0.06em !important;
@@ -50,7 +50,7 @@
 	}
 
 	i.icon {
-		font-family: Icons !important;
+		font-family: brand-icons, Icons !important;
 	}
 }
 @-moz-document regexp("chrome-extension://.*"), regexp("moz-extension://.*") {
@@ -72,4 +72,10 @@
 	.wiki-lemma-icons {
 		font-family: baikeFont_layout !important;
 	}
+}
+
+@-moz-document domain("acfun.cn") {
+    div:not(.danmaku-item) {
+        text-shadow: 0em 0em 0.06em !important;
+    }
 }

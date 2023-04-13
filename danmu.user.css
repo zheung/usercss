@@ -1,0 +1,13 @@
+/* ==UserStyle==
+@name        [哔哩哔哩]弹幕管理内容不省略
+@namespace   https://github.com/zheung
+@version     1.0.0
+@author      Nuogz
+@updateURL   https://pile.danor.app/stylus/danmu.user.css
+==/UserStyle== */
+@-moz-document domain("member.bilibili.com") {
+	a.colum-content.ellipsis {
+		white-space: unset !important;
+		word-break: unset !important;
+	}
+}

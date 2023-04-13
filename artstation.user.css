@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name        ArtStation Add project to collection Wider
+@namespace   https://github.com/zheung
+@version     1.0.0
+@author      Nuogz
+@description Window "Make Add project to collection" Wider
+@updateURL   https://pile.danor.app/stylus/artstation.user.css
+==/UserStyle== */
+
+@-moz-document url-prefix("https://www.artstation.com/artwork") {
+    add-to-collection-modal div.modal-dialog {
+        width:720px;
+    }
+}
