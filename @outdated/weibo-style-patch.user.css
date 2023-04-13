@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name           微博移动黑
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("weibo.com") {
+	:root {
+		--weibo-top-nav-height: 40px;
+	}
+	.Nav_logo_1BwBq {
+		display: none;
+	}
+	.Nav_main_32v4H, .SecBar_secBar_2KHxF {
+		top: 38px;
+	}
+}

@@ -1,0 +1,13 @@
+/* ==UserStyle==
+@name           ngabbs.com - 2019/12/24 上午11:30:20
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+@-moz-document url-prefix("https://ngabbs.com/read.php?tid=") {
+	* {
+		color: snow !important;
+		background: #495051 !important;
+	}
+}

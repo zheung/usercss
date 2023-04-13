@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name           gltyx.github.io - 2022/8/5 09:42:33
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("gltyx.github.io") {
+	.main-im {
+		display: none;
+	}
+}
+
+@-moz-document domain("g1tyx.github.io") {
+	.main-im {
+		display: none;
+	}
+}

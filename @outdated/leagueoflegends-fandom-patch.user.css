@@ -1,0 +1,13 @@
+/* ==UserStyle==
+@name           leagueoflegends.fandom.com - 2020/6/30 上午8:42:16
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("leagueoflegends.fandom.com") {
+	body.skin-oasis {
+		background: #0e1436;
+	}
+}

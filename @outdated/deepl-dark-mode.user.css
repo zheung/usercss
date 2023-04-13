@@ -1,0 +1,28 @@
+/* ==UserStyle==
+@name           deepl.com - 2021/4/7上午9:11:52
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("deepl.com") {
+	.dl_translator_page_container, .lmt__textarea_container {
+		background: #0f2b46 !important;
+	}
+	textarea, .lmt__language_select__active__title {
+		color: snow !important;
+	}
+	.lmt--web .lmt__language_select>button:hover strong {
+		color: #0280bd;
+	}
+	.lmt--web .lmt__language_select>button strong {
+		color: #0280bd;
+	}
+	.dl_app_ad .dl_app_ad__commonContent.dl_app_ad__white_background {
+		background: #0f2b46;
+	}
+	.lmt__dict .lmt__dict__inner {
+		background: #0f2b46;
+	}
+}

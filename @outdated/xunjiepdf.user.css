@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name           app.xunjiepdf.com - 2020/8/27 下午9:09:54
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         DanoR
+==/UserStyle== */
+
+@-moz-document url-prefix("https://app.xunjiepdf.com/voice2text/") {
+	.filelist > li .title {
+		width: 110px;
+		overflow: hidden;
+		text-align: center;
+		font-size: 12px;
+		margin-top: 3px;
+		height: 70px;
+		line-height: 20px;
+	}
+}

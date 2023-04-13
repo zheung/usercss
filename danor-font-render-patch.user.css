@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        DanoR 字体渲染
 @namespace   https://github.com/zheung
-@version     2.2.0
+@version     2.3.0
 @author      DanoR
 @description DanoR FontRender
 @updateURL   https://pile.danor.app/stylus/danor.user.css
@@ -15,7 +15,7 @@
 }
 
 @-moz-document domain("hupu.com") {
-	/* 全局阴影+雅黑（域名白名单） */
+	/* 全局雅黑（域名白名单） */
 	* {
 		font-family: Microsoft YaHei !important;
 	}
@@ -34,8 +34,8 @@
 }
 
 @-moz-document domain("bilibili.com") {
-	/* 阴影+哔哩哔哩弹幕 */
-	:not(.b-danmaku):not(.b-danmaku-high-text):not(.bilibili-danmaku) {
+	/* 哔哩哔哩弹幕排除 */
+	:not(.bpx-player-video-area *) {
 		text-shadow: 0em 0em 0.06em !important;
 	}
 }
@@ -81,7 +81,7 @@
 }
 
 @-moz-document regexp(".*") {
-	html {
+	html, .grayTheme {
 		filter: none !important;
 	}
 }

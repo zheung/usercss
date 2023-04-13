@@ -1,0 +1,13 @@
+/* ==UserStyle==
+@name           member.bilibili.com - 2022/9/21 11:49:09
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document url-prefix("https://member.bilibili.com/platform/upload-manager/ep") {
+	.ep-table-tr-item:nth-child(2) {
+		text-align: left !important;
+	}
+}

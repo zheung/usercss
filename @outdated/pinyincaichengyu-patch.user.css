@@ -1,0 +1,13 @@
+/* ==UserStyle==
+@name           pinyincaichengyu.com - 2022/2/18 12:01:53
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("pinyincaichengyu.com") {
+	body {
+		background: rgb(17, 24, 39);
+	}
+}

@@ -1,0 +1,17 @@
+/* ==UserStyle==
+@name           www.miguvideo.com - 2022/4/12 19:18:43
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+@-moz-document url-prefix("https://www.miguvideo.com/mgs/website/prd/sportLive.html") {
+	video {
+		position: fixed;
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		z-index: 9999;
+	}
+}
