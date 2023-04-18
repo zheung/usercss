@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name           chaturbate-video-full-page-screen
+@namespace      nuogz
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("chaturbate.com") {
+	div#vjs_video_3 {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 99999999;
+		background: black!important;
+	}
+}
