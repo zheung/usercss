@@ -1,9 +1,10 @@
 /* ==UserStyle==
-@name           chaturbate-video-full-page-screen
-@namespace      nuogz
-@version        1.0.0
-@description    A new userstyle
-@author         Me
+@name        【Chaturbate】直播视频网页全屏
+@namespace   https://github.com/zheung
+@version     1.1.0
+@author      DanoR
+@description Chaturbate直播视频网页全屏
+@updateURL   https://pile.danor.app/usercss/chaturbate-video-full-view-screen.user.css
 ==/UserStyle== */
 
 @-moz-document domain("chaturbate.com") {
@@ -14,6 +15,6 @@
 		right: 0;
 		bottom: 0;
 		z-index: 99999999;
-		background: black!important;
+		background: black !important;
 	}
 }
