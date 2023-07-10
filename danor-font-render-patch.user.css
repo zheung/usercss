@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        【通用】DanoR字体渲染补丁
 @namespace   https://github.com/zheung
-@version     2.3.2
+@version     2.3.3
 @author      DanoR
 @description 利用text-shadow的字体渲染优化
 @updateURL   https://pile.danor.app/usercss/danor-font-render-patch.user.css
@@ -35,8 +35,13 @@
 
 @-moz-document domain("bilibili.com") {
 	/* 哔哩哔哩弹幕排除 */
-	:not(.bpx-player-video-area *) {
+	:not(.bpx-player-video-area *):not(.bili-dm) {
 		text-shadow: 0em 0em 0.06em !important;
+	}
+
+	.bili-high-text {
+		--textShadow: 1px 0 1px #000000, 0 1px 1px #000000, 0 -1px 1px #000000, -1px 0 1px #000000;
+		text-shadow: var(--textShadow);
 	}
 }
 
