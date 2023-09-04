@@ -7,6 +7,8 @@
 @updateURL   https://pile.danor.app/usercss/twitter-nick-hidden.user.css
 ==/UserStyle== */
 
+
+
 @-moz-document domain("twitter.com") {
 	[aria-label="账号菜单"] .css-901oao.css-16my406.r-poiln3.r-bcqeeo.r-qvutc0:not(.css-1hf3ou5):not(.r-1pos5eu):not(.r-xoduu5) {
 		color: transparent;

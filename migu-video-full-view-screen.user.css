@@ -7,6 +7,8 @@
 @updateURL   https://pile.danor.app/usercss/migu-video-full-view-screen.user.css
 ==/UserStyle== */
 
+
+
 @-moz-document url-prefix("https://www.miguvideo.com/mgs/website/prd/sportLive.html") {
 	video {
 		position: fixed;

@@ -7,6 +7,8 @@
 @updateURL   https://pile.danor.app/usercss/xhamsterlive-video-full-view-screen.user.css
 ==/UserStyle== */
 
+
+
 @-moz-document domain("xhamsterlive.com") {
 	div.content {
 		position: fixed;

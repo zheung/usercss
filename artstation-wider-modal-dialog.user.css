@@ -7,6 +7,8 @@
 @updateURL   https://pile.danor.app/usercss/artstation-wider-modal-dialog.user.css
 ==/UserStyle== */
 
+
+
 @-moz-document url-prefix("https://www.artstation.com/artwork") {
 	.modal-dialog {
 		width: 960px;
