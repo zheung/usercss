@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        【Saucenao】右侧搜索表单
 @namespace   https://github.com/zheung
-@version     1.2.0
+@version     1.2.1
 @author      DanoR
 @description 将搜索结果页原本在结果下方的搜索表单移动至右侧
 @updateURL   https://pile.danor.app/usercss/saucenao-result-right-form.user.css
@@ -10,6 +10,10 @@
 
 
 @-moz-document url-prefix("https://saucenao.com/search.php") {
+	body {
+		white-space: nowrap;
+	}
+
 	div#middle > div:last-child {
 		opacity: 100%;
 	}
@@ -17,7 +21,6 @@
 	#mainarea {
 		display: inline-block;
 	}
-
 	#footerarea {
 		display: inline-block;
 		vertical-align: top;
@@ -29,7 +32,6 @@
 	#footerarea > #footer-middle > #randomMessage {
 		text-align: left;
 	}
-
 	#footerarea > #footer-middle > #Search {
 		margin: 0px !important;
 	}

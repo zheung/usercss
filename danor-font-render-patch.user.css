@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        【通用】DanoR字体渲染补丁
 @namespace   https://github.com/zheung
-@version     2.3.3
+@version     2.4.0
 @author      DanoR
 @description 利用text-shadow的字体渲染优化
 @updateURL   https://pile.danor.app/usercss/danor-font-render-patch.user.css
@@ -9,86 +9,51 @@
 
 
 
-@-moz-document regexp("((?!((paypal|debuggex|iqiyi|bilibili|(codecombat\\.163))\\.com)|paiza\\.jp|acfun\\.cn).)*"), regexp("chrome-extension://.*"), regexp("moz-extension://.*") {
+@-moz-document url-prefix("chrome-extension://"), url-prefix("moz-extension://"), regexp("((?!((bilibili|iqiyi|paypal)\\.com)|acfun\\.cn).)*") {
 	/* 全局阴影（正则黑名单） */
+
 	* {
 		text-shadow: 0em 0em 0.06em !important;
 	}
 }
 
-@-moz-document domain("hupu.com") {
-	/* 全局雅黑（域名白名单） */
-	* {
-		font-family: Microsoft YaHei !important;
-	}
-}
+@-moz-document url-prefix("chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne"), url-prefix("moz-extension://e4b74982-554c-4e24-b21a-16531325cb1d") {
+	/* Stylus */
 
-/* 只能部分阴影的网站 */
-@-moz-document domain("iqiyi.com") {
-	/* 阴影+爱奇艺弹幕 */
-	:not(.danmaku-item) {
-		text-shadow: 0em 0em 0.06em !important;
-	}
-
-	.danmaku-item > span {
-		text-shadow: rgb(47, 38, 20) 1px 0px 0px, rgb(47, 38, 20) 0px 1px 0px, rgb(47, 38, 20) -1px 0px 0px, rgb(47, 38, 20) 0px -1px 0px !important;
+	/* 代码编辑器使用Source Code Pro字体 */
+	.CodeMirror-code *:not(i[class^=i-]) {
+		font-family: Source Code Pro;
 	}
 }
 
 @-moz-document domain("bilibili.com") {
-	/* 哔哩哔哩弹幕排除 */
-	:not(.bpx-player-video-area *):not(.bili-dm) {
+	/* 哔哩哔哩 */
+
+	/* 全局阴影（排除视频弹幕和直播弹幕） */
+	:not(.bpx-player-row-dm-wrap *):not(.danmaku-item-container *) {
 		text-shadow: 0em 0em 0.06em !important;
 	}
 
-	.bili-high-text {
+	/* 补充居中的高赞弹幕缺少的字体阴影 */
+	.bili-dm.bili-center.bili-high.bili-high-top.bili-show {
 		--textShadow: 1px 0 1px #000000, 0 1px 1px #000000, 0 -1px 1px #000000, -1px 0 1px #000000;
-		text-shadow: var(--textShadow);
-	}
-}
-
-/* 需要额外字体的网站 */
-@-moz-document domain("oschina.net") {
-	/* 开源中国图标 */
-	* {
-		font-family: Microsoft YaHei !important;
-	}
-
-	i.icon {
-		font-family: brand-icons, Icons !important;
-	}
-}
-
-@-moz-document regexp("chrome-extension://.*"), regexp("moz-extension://.*") {
-	/* Stylus自身 */
-	* {
-		font-family: Source Code Pro !important;
-	}
-}
-
-@-moz-document domain("baidu.com") {
-	/* 百度图标 */
-	* {
-		font-family: Microsoft YaHei !important;
-	}
-
-	.cmn-icons {
-		font-family: baikeFont_css !important;
-	}
-
-	.wiki-lemma-icons {
-		font-family: baikeFont_layout !important;
 	}
 }
 
 @-moz-document domain("acfun.cn") {
-	div:not(.danmaku-item) {
+	/* AcFun */
+
+	/* 全局阴影（排除视频弹幕） */
+	:not(.danmaku-screen *) {
 		text-shadow: 0em 0em 0.06em !important;
 	}
 }
 
-@-moz-document regexp(".*") {
-	html, .grayTheme {
-		filter: none !important;
+@-moz-document domain("iqiyi.com") {
+	/* 爱奇艺 */
+
+	/* 全局阴影（排除视频弹幕） */
+	:not(.iqp-barrage-item *) {
+		text-shadow: 0em 0em 0.06em !important;
 	}
 }
