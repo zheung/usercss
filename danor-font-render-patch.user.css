@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name        【通用】DanoR字体渲染补丁
-@namespace   https://github.com/zheung
-@version     2.4.0
+@name        danor-font-render-patch
+@namespace   https://danor.app
+@version     2.4.1+25080313
 @author      DanoR
-@description 利用text-shadow的字体渲染优化
+@description 【通用】利用text-shadow的字体渲染优化
 @updateURL   https://pile.danor.app/usercss/danor-font-render-patch.user.css
 ==/UserStyle== */
 
@@ -30,12 +30,17 @@
 	/* 哔哩哔哩 */
 
 	/* 全局阴影（排除视频弹幕和直播弹幕） */
-	:not(.bpx-player-row-dm-wrap *):not(.danmaku-item-container *) {
+	:not(.bpx-player-row-dm-wrap *):not(.danmaku-item-container *):not(.dyn-decoration-card span):not(.reply-decorate span) {
 		text-shadow: 0em 0em 0.06em !important;
 	}
 
+	.dyn-decoration-card span, .reply-decorate span,
+	:host(bili-comment-user-sailing-card) #card span {
+		text-shadow: none !important;
+	}
+
 	/* 补充居中的高赞弹幕缺少的字体阴影 */
-	.bili-dm.bili-center.bili-high.bili-high-top.bili-show {
+	.bili-dm.bili-high.bili-show {
 		--textShadow: 1px 0 1px #000000, 0 1px 1px #000000, 0 -1px 1px #000000, -1px 0 1px #000000;
 	}
 }

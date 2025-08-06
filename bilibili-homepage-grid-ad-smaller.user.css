@@ -1,0 +1,38 @@
+/* ==UserStyle==
+@name        bilibili-homepage-grid-ad-smaller
+@namespace   https://danor.app
+@version     1.0.0+23121709
+@author      DanoR
+@description 【哔哩哔哩】首页列表广告缩小到一格
+@updateURL   https://pile.danor.app/usercss/bilibili-homepage-grid-ad-smaller.user.css
+==/UserStyle== */
+
+
+
+@-moz-document regexp(".*www\\.bilibili\\.com/(\\?.*)?") {
+	.recommended-swipe {
+		grid-row: 1/1 !important;
+		grid-column: 1/1 !important;
+	}
+	.carousel-tool {
+		width: 60%;
+	}
+	@media (min-width: 1560px) and (max-width: 2059.9px) {
+		.recommended-container_floor-aside .container > *:nth-of-type(n + 6) {
+			margin-top: 40px
+		}
+
+		.recommended-container_floor-aside .container.is-version8 > *:nth-of-type(n + 11) {
+			margin-top: 24px
+		}
+	}
+	@media (min-width: 1300px) and (max-width: 1399.9px) {
+		.recommended-container_floor-aside .container > *:nth-of-type(5) {
+			margin-top: 40px;
+		}
+
+		.recommended-container_floor-aside .container.is-version8 > *:nth-of-type(n + 9) {
+			margin-top: 22px;
+		}
+	}
+}

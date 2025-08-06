@@ -1,0 +1,20 @@
+/* ==UserStyle==
+@name        bilibili-upower-video-preview-noblur
+@namespace   https://danor.app
+@version     1.0.0+25080610
+@author      DanoR
+@description 【哔哩哔哩】充电视频进度条图片预览无虚化
+@updateURL   https://pile.danor.app/usercss/bilibili-upower-video-preview-noblur.user.css
+==/UserStyle== */
+
+
+
+@-moz-document url-prefix("https://www.bilibili.com/video/") {
+	.bpx-player-progress-preview-image {
+		filter: none !important;
+	}
+
+	.bpx-player-progress-preview-charging-tip {
+		display: none !important;
+	}
+}
