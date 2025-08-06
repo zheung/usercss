@@ -1,0 +1,24 @@
+/* ==UserStyle==
+@name        bilibili-live-sidebar-fix
+@namespace   https://danor.app
+@version     1.0.0+24070220
+@author      DanoR
+@description 【哔哩哔哩】直播侧栏样式修复
+@updateURL   https://pile.danor.app/usercss/bilibili-live-sidebar-fix.user.css
+==/UserStyle== */
+
+
+
+@-moz-document domain("live.bilibili.com") {
+	.player-full-win .aside-area .rank-list-ctnr {
+		border-radius: 12px 12px 0 0 !important;
+	}
+
+	.player-full-win .aside-area .chat-control-panel{
+		border-radius: 0 0 20px 20px !important;
+	}
+
+	.live-room-app .app-content .app-body .player-and-aside-area .aside-area .chat-history-panel {
+		height: calc(100% - 178px - 145px);
+	}
+}

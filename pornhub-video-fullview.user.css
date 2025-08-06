@@ -1,0 +1,25 @@
+/* ==UserStyle==
+@name        pornhub-video-fullview
+@namespace   https://danor.app
+@version     1.0.0+24060601
+@author      DanoR
+@description 【Pornhub】视频网页全屏
+@updateURL   https://pile.danor.app/usercss/pornhub-video-fullview.user.css
+==/UserStyle== */
+
+
+
+@-moz-document url-prefix("https://cn.pornhub.com/view_video.php") {
+	#player:not(.original) {
+		position: fixed !important;
+		inset: 0  !important;
+		z-index: 9999  !important;
+		width: 100vw  !important;
+		height: 100vh  !important;
+		max-width: 100vw !important;
+		max-height: 100vh !important;
+	}
+	header#header {
+		z-index: -1 !important;
+	}
+}

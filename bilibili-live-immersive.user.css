@@ -1,0 +1,58 @@
+/* ==UserStyle==
+@name        bilibili-live-immersive
+@namespace   https://danor.app
+@version     1.0.0+23071419
+@author      DanoR
+@description 【哔哩哔哩】直播沉浸样式
+@updateURL   https://pile.danor.app/usercss/bilibili-live-immersive.user.css
+==/UserStyle== */
+
+
+
+@-moz-document domain("live.bilibili.com") {
+	/* 应急修复活动直播间不会缩起来 */
+	.link-navbar {
+		z-index: 0 !important;
+	}
+
+	/* 屏蔽连续点赞/弹幕/礼物框，以修复出现时输入框错位的问题 */
+	#combo-card {
+		display: none !important;
+	}
+	.chat-history-panel.new {
+		padding-bottom: 0px !important;
+	}
+
+	/* 修复深色模式下SC发送人名字不清晰的问题 */
+	html[lab-style*=dark] .name {
+		color: #333 !important;
+	}
+	html[lab-style*=dark] .name.isVip {
+		color: #f9708e !important;
+	}
+
+	/* 屏蔽直播画面的左上角的直播LOGO */
+	svg#图层_1 {
+		display: none;
+	}
+
+	/* 屏蔽画面上方的PK条 */
+	.awesome-pk-box {
+		display: none !important;
+	}
+
+	/* 屏蔽小橙车的弹窗 */
+	#shop-popover-vm {
+		display: none;
+	}
+
+	/* 隐藏播放器控制条的黑色背景（方便截图用的） */
+	.web-player-controller-wrap {
+		background-image: none !important;
+	}
+
+	.fans-medal-item .fans-medal-level .fans-medal-level-font,
+	.fans-medal-item .fans-medal-level .fans-medal-level-font[data-v-2c4630d2] {
+		line-height: 20px !important;
+	}
+}

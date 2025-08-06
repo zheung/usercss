@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name        fantia-image-blur
+@namespace   https://danor.app
+@version     1.0.0+24012908
+@author      DanoR
+@description 【Fantia】图片模糊
+@updateURL   https://pile.danor.app/usercss/fantia-image-blur.user.css
+==/UserStyle== */
+
+
+
+@-moz-document url-prefix("https://fantia.jp/fanclubs/17213/posts") {
+	.force-square img {
+		filter: blur(10px);
+	}
+}

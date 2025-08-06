@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name        jsonformatter-font-mod
+@namespace   https://danor.app
+@version     1.0.0+24052814
+@author      DanoR
+@description 【JSON Formatter】修改插件字体
+@updateURL   https://pile.danor.app/usercss/jsonformatter-font-mod.user.css
+==/UserStyle== */
+
+
+
+@-moz-document url-prefix("https://"), url-prefix("http://") {
+	#jsonFormatterParsed * {
+		font-family: 'Cascadia Code', 'Source Code YaHei', 'Source Code Pro Medium', '等距更纱黑体 SC Medium', 微软雅黑;
+	}
+}

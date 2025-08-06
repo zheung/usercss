@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name        danbooru-image-hide
+@namespace   https://danor.app
+@version     1.0.0+23101814
+@author      DanoR
+@description 【Danbooru】图片隐藏
+@updateURL   https://pile.danor.app/usercss/danbooru-image-hide.user.css
+==/UserStyle== */
+
+
+
+@-moz-document url-prefix("https://danbooru.donmai.us/posts/") {
+	img#image {
+		display: none;
+	}
+}

@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name        pornhub-trial-expire-reminder-hide
+@namespace   https://danor.app
+@version     1.0.0+23072104
+@author      DanoR
+@description 【Pornhub】隐藏试用过期横幅
+@updateURL   https://pile.danor.app/usercss/pornhub-trial-expire-reminder-hide.user.css
+==/UserStyle== */
+
+
+
+@-moz-document domain("pornhub.com") {
+	#js-trialExpireReminder {
+		display: none;
+	}
+}

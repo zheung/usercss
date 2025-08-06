@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name        bilibili-live-player-control-hide
+@namespace   https://danor.app
+@version     1.0.0+24021220
+@author      DanoR
+@description 【哔哩哔哩】直播播放器控制栏隐藏
+@updateURL   https://pile.danor.app/usercss/bilibili-live-player-control-hide.user.css
+==/UserStyle== */
+
+
+
+@-moz-document domain("live.bilibili.com") {
+	.web-player-controller-wrap {
+		display: none !important;
+	}
+}

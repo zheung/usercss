@@ -1,0 +1,17 @@
+/* ==UserStyle==
+@name        bilibili-live-sidebar-radius-fix
+@namespace   https://danor.app
+@version     1.0.0+25042020
+@author      DanoR
+@description 【哔哩哔哩】直播侧栏圆角修复
+@updateURL   https://pile.danor.app/usercss/bilibili-live-sidebar-radius-fix.user.css
+==/UserStyle== */
+
+
+
+@-moz-document domain("live.bilibili.com") {
+	body.player-full-win #rank-list-ctnr-box,
+	body.player-full-win #chat-control-panel-vm {
+		border-radius: 0px !important;
+	}
+}
