@@ -1,0 +1,27 @@
+/* ==UserStyle==
+@name        bilibili-suit-lowkey
+@namespace   https://danor.app
+@version     1.0.0+24060610
+@author      DanoR
+@description 【哔哩哔哩】收藏集低调样式
+@updateURL   https://pile.danor.app/usercss/bilibili-suit-lowkey.user.css
+==/UserStyle== */
+
+
+
+@-moz-document url-prefix("https://www.bilibili.com/blackboard/activity-Mz9T5bO5Q3.html") {
+	body {
+		background-image: none;
+		background-color: black;
+	}
+	.left-panel {
+		width: 480px;
+	}
+	.left-panel .preview {
+		pointer-events: auto;
+		z-index: 0;
+	}
+	.right-panel {
+		opacity: 0;
+	}
+}
